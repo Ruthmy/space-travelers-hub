@@ -1,4 +1,4 @@
-export const rocketList = [
+const rocketList = [
   {
     height: {
       meters: 22.25,
@@ -83,10 +83,7 @@ export const rocketList = [
         lb: 992,
       },
     ],
-    flickr_images: [
-      'https://imgur.com/DaCfMsj.jpg',
-      'https://imgur.com/azYafd8.jpg',
-    ],
+    flickr_images: ['https://imgur.com/DaCfMsj.jpg', 'https://imgur.com/azYafd8.jpg'],
     name: 'Falcon 1',
     type: 'rocket',
     active: false,
@@ -98,7 +95,8 @@ export const rocketList = [
     country: 'Republic of the Marshall Islands',
     company: 'SpaceX',
     wikipedia: 'https://en.wikipedia.org/wiki/Falcon_1',
-    description: 'The Falcon 1 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009. On 28 September 2008, Falcon 1 became the first privately-developed liquid-fuel launch vehicle to go into orbit around the Earth.',
+    description:
+      'The Falcon 1 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009. On 28 September 2008, Falcon 1 became the first privately-developed liquid-fuel launch vehicle to go into orbit around the Earth.',
     id: '5e9d0d95eda69955f709d1eb',
   },
   {
@@ -216,7 +214,8 @@ export const rocketList = [
     country: 'United States',
     company: 'SpaceX',
     wikipedia: 'https://en.wikipedia.org/wiki/Falcon_9',
-    description: 'Falcon 9 is a two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of satellites and the Dragon spacecraft into orbit.',
+    description:
+      'Falcon 9 is a two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of satellites and the Dragon spacecraft into orbit.',
     id: '5e9d0d95eda69973a809d1ec',
   },
   {
@@ -338,7 +337,8 @@ export const rocketList = [
     country: 'United States',
     company: 'SpaceX',
     wikipedia: 'https://en.wikipedia.org/wiki/Falcon_Heavy',
-    description: 'With the ability to lift into orbit over 54 metric tons (119,000 lb)--a mass equivalent to a 737 jetliner loaded with passengers, crew, luggage and fuel--Falcon Heavy can lift more than twice the payload of the next closest operational vehicle, the Delta IV Heavy, at one-third the cost.',
+    description:
+      'With the ability to lift into orbit over 54 metric tons (119,000 lb)--a mass equivalent to a 737 jetliner loaded with passengers, crew, luggage and fuel--Falcon Heavy can lift more than twice the payload of the next closest operational vehicle, the Delta IV Heavy, at one-third the cost.',
     id: '5e9d0d95eda69974db09d1ed',
   },
   {
@@ -454,7 +454,10 @@ export const rocketList = [
     country: 'United States',
     company: 'SpaceX',
     wikipedia: 'https://en.wikipedia.org/wiki/SpaceX_Starship',
-    description: 'Starship and Super Heavy Rocket represent a fully reusable transportation system designed to service all Earth orbit needs as well as the Moon and Mars. This two-stage vehicle — composed of the Super Heavy rocket (booster) and Starship (ship) — will eventually replace Falcon 9, Falcon Heavy and Dragon.',
+    description:
+      'Starship and Super Heavy Rocket represent a fully reusable transportation system designed to service all Earth orbit needs as well as the Moon and Mars. This two-stage vehicle — composed of the Super Heavy rocket (booster) and Starship (ship) — will eventually replace Falcon 9, Falcon Heavy and Dragon.',
     id: '5e9d0d96eda699382d09d1ee',
   },
 ];
+
+export default rocketList;

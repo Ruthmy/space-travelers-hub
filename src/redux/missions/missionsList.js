@@ -1,4 +1,4 @@
-export const list = [
+const list = [
   {
     mission_name: 'Thaicom',
     mission_id: '9D1B7E0',
@@ -179,3 +179,5 @@ export const list = [
     description: "Eutelsat S.A. is a European satellite operator. Providing coverage over the entire European continent, the Middle East, Africa, Asia and the Americas, it is the world's third largest satellite operator in terms of revenues.",
   },
 ];
+
+export default list;

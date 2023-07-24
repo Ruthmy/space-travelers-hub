@@ -1,4 +1,4 @@
-import { list } from '../../redux/missions/missionsList';
+import list from '../../redux/missions/missionsList';
 
 const MissionsList = () => {
   const missions = [...list];
