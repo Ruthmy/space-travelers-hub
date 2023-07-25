@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { missionsAPI } from '../../API/API';
 
-export const getMissions = createAsyncThunk('missions/get', async () => {
+export const fetchMissions = createAsyncThunk('missions/get', async () => {
   const response = await axios.get(missionsAPI);
 
   const missionsList = response.data.map((mission) => ({
@@ -35,14 +35,14 @@ const missionsSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      .addCase(getMissions.pending, (state) => {
+      .addCase(fetchMissions.pending, (state) => {
         state.status = 'Loading';
       })
-      .addCase(getMissions.fulfilled, (state, action) => {
+      .addCase(fetchMissions.fulfilled, (state, action) => {
         state.status = 'Succeeded';
         state.list = action.payload;
       })
-      .addCase(getMissions.rejected, (state, action) => {
+      .addCase(fetchMissions.rejected, (state, action) => {
         state.status = 'Failed';
         state.error = action.error.message;
       });
