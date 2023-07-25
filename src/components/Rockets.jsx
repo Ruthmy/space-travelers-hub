@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { fetchRockets } from '../redux/rockets/rocketsSlice';
-import '../../styles/Rockets.css';
+import '../styles/Rockets.css';
 
 const Rockets = () => {
   const dispatch = useDispatch();
