@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { rocketsAPI } from '../../API/rocketsAPI';
+import { rocketsAPI } from '../../API/API';
 
 export const fetchRockets = createAsyncThunk(
   'rockets/fetchRockets',
