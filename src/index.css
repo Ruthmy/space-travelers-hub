@@ -2,7 +2,8 @@
 
 :root {
   /* Set your variables here */
-  --font: 'Montserrat', sans-serif;
+  --font-one: 'Montserrat', sans-serif;
+  --font-two: 'Roboto', sans-serif;
 }
 
 html {
@@ -20,4 +21,14 @@ html {
   padding: 0;
 
   /* outline: 1px solid red !important; */
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
 }
