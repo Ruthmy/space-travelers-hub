@@ -1,8 +1,22 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import routes from '../bd/MenuData';
 import '../styles/Navbar.css';
+
+const routes = [
+  {
+    to: '/',
+    text: 'Rockets',
+  },
+  {
+    to: '/missions',
+    text: 'Missions',
+  },
+  {
+    to: '/profile',
+    text: 'My Profile',
+  },
+];
 
 const Navbar = () => (
   <nav>
