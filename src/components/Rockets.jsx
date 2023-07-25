@@ -31,7 +31,8 @@ const Rockets = () => {
                       : reserveRocket(rocket.id));
                   }}
                 >
-                  {!rocket.reserved ? 'Reserve Rocket' : 'Cancel Reservation'}
+                  {rocket.reserved && 'Cancel Reservation'}
+                  {!rocket.reserved && 'Reserve Rocket'}
                 </button>
               </div>
             </li>
