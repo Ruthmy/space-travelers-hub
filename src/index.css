@@ -4,6 +4,10 @@
   /* Set your variables here */
   --font-one: 'Montserrat', sans-serif;
   --font-two: 'Roboto', sans-serif;
+  --p-size: 1.6rem;
+  --h1-size: 3.2rem;
+  --h2-size: 2.4rem;
+  --h3-size: 1.8rem;
 }
 
 html {
@@ -32,3 +36,21 @@ html {
   display: flex;
   flex-direction: row;
 }
+
+h1 { font-size: var(--h1-size); }
+
+h2 { font-size: var(--h2-size); }
+
+h3 { font-size: var(--h3-size); }
+
+p,
+li,
+tr,
+td { font-size: var(--p-size); }
+
+a {
+  text-decoration: none;
+  font-size: var(--p-size);
+}
+
+li { list-style: none; }
