@@ -1,1 +1,28 @@
-/* Comming soon! */
+.rockets {
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 4rem;
+  width: 100%;
+  gap: 2rem;
+}
+
+.rockets__container,
+.rockets__list {
+  gap: 2rem;
+}
+
+.rockets__list img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.rockets__info {
+  gap: 1rem;
+}
+
+.rockets__container button {
+  width: 100%;
+  max-width: 15rem;
+  height: 3.5rem;
+}
