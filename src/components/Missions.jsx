@@ -1,18 +1,27 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getMissions } from '../redux/missions/missionsSlice';
+import { getMissions, reservationToggle } from '../redux/missions/missionsSlice';
 
 const MissionsList = () => {
   const missionsList = useSelector((state) => state.missions.list);
+  const dispatch = useDispatch();
+
+  function handleReservationToggle(missionID) {
+    return dispatch(reservationToggle(missionID));
+  }
 
   const missions = missionsList.map((mission) => (
     <tr key={mission.mission_id}>
       <td>{mission.mission_name}</td>
       <td>{mission.description}</td>
-      <td>{mission.membership || 'Not a member'}</td>
+      <td>{mission.reserved ? 'Active member' : 'Not a member'}</td>
       <td>
-        <button type="button" className={mission.joinMission || 'mission__join-mission-btn'}>
-          Join Mission
+        <button
+          type="button"
+          className={mission.reserved ? 'mission__leave-mission-btn' : 'mission__join-mission-btn'}
+          onClick={() => handleReservationToggle(mission.mission_id)}
+        >
+          {mission.reserved ? 'Leave Mission' : 'Join Mission'}
         </button>
       </td>
     </tr>
