@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getMissions, reservationToggle } from '../redux/missions/missionsSlice';
+import { reservationToggle } from '../redux/missions/missionsSlice';
 
 const MissionsList = () => {
   const missionsList = useSelector((state) => state.missions.list);
@@ -30,30 +29,22 @@ const MissionsList = () => {
   return missions;
 };
 
-const Missions = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getMissions());
-  }, [dispatch]);
-
-  return (
-    <section id="missions">
-      <table id="missions__table">
-        <thead>
-          <tr className="table__row-header">
-            <th>Mission</th>
-            <th>Description</th>
-            <th>Status</th>
-            <th> </th>
-          </tr>
-        </thead>
-        <tbody>
-          <MissionsList />
-        </tbody>
-      </table>
-    </section>
-  );
-};
+const Missions = () => (
+  <section id="missions">
+    <table id="missions__table">
+      <thead>
+        <tr className="table__row-header">
+          <th>Mission</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th> </th>
+        </tr>
+      </thead>
+      <tbody>
+        <MissionsList />
+      </tbody>
+    </table>
+  </section>
+);
 
 export default Missions;
