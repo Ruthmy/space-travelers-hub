@@ -34,18 +34,6 @@ const Rockets = () => {
           </li>
         ))}
       </div>
-      {/*
-      <ul>
-        <li>
-          <img src="" alt="" />
-          <div>
-            <h3>Rocket Name</h3>
-            <p>Rocket description</p>
-            <Link to="/rockets/:rocket_id">Reserve Rocket</Link>
-          </div>
-        </li>
-      </ul>
-      */}
     </section>
   );
 };
