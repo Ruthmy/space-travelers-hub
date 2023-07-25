@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getMissions } from '../../redux/missions/missionsSlice';
+import { getMissions } from '../redux/missions/missionsSlice';
 
 const MissionsList = () => {
   const missionsList = useSelector((state) => state.missions.list);
