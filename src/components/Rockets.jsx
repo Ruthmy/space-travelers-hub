@@ -21,7 +21,10 @@ const Rockets = () => {
               <img src={rocket.flickr_images[0]} alt={rocket.name} />
               <div className="rockets__info d-flex-column">
                 <h3>{rocket.name}</h3>
-                <p>{rocket.description}</p>
+                <p>
+                  {rocket.reserved && <span className="rockets__badge">Reserved</span>}
+                  {rocket.description}
+                </p>
                 <button
                   type="button"
                   className={rocket.reserved ? 'cancel' : 'reserve'}
@@ -31,8 +34,7 @@ const Rockets = () => {
                       : reserveRocket(rocket.id));
                   }}
                 >
-                  {rocket.reserved && 'Cancel Reservation'}
-                  {!rocket.reserved && 'Reserve Rocket'}
+                  {rocket.reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
                 </button>
               </div>
             </li>
