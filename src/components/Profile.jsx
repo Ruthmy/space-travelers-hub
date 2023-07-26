@@ -1,42 +1,71 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 
 import '../styles/Profile.css';
 
 const Profile = () => {
   // Get rockets from Redux store:
-  const rocketsList = useSelector((state) => state.rockets);
+  const rockets = useSelector((state) => state.rockets);
+  const missions = useSelector((state) => state.missions);
 
+  function missionsList() {
+    const missionList = missions.list.filter((mission) => mission.reserved === true);
+
+    if (missionList.length) {
+      return missionList.map((mission) => (
+        <tr key={mission.mission_id}>
+          <td>{mission.mission_name}</td>
+        </tr>
+      ));
+    }
+
+    return (
+      <tr>
+        <td style={{ margin: 'auto' }}>
+          <i>No missions joined yet</i>
+        </td>
+      </tr>
+    );
+  }
+
+  function rocketsList() {
+    const rocketsList = rockets.rockets.filter((rocket) => rocket.reserved === true);
+
+    if (rocketsList.length) {
+      return rocketsList.map((rocket) => (
+        <tr key={rocket.id}>
+          <td>{rocket.name}</td>
+        </tr>
+      ));
+    }
+
+    return (
+      <tr>
+        <td style={{ margin: 'auto' }}>
+          <i>No rockets reserved yet</i>
+        </td>
+      </tr>
+    );
+  }
   return (
-    <div className="profile">
-      <h1>My Profile</h1>
-      <div className="profile-container">
-        <div className="profile-info">
-          <h2>My Missions</h2>
-          <ul>
-            <li>SpaceX CRS-2</li>
-            <li>SpaceX CRS-3</li>
-            <li>SpaceX CRS-4</li>
-            <li>SpaceX CRS-5</li>
-            <li>SpaceX CRS-6</li>
-            <li>SpaceX CRS-7</li>
-            <li>SpaceX CRS-8</li>
-            <li>SpaceX CRS-9</li>
-            <li>SpaceX CRS-10</li>
-          </ul>
-        </div>
-        <div className="profile-info">
-          <h2>My Rockets</h2>
-          <ul>
-            {rocketsList.rockets.filter((rocket) => rocket.reserved === true).map((rocket) => (
-              <li key={rocket.id}>{rocket.name}</li>
-            ))}
-          </ul>
-        </div>
-      </div>
-      <Link to="/" className="btn btn-primary">Back</Link>
-    </div>
+    <section className="profile">
+      <table className="profile__info">
+        <thead>
+          <tr>
+            <th>My Missions</th>
+          </tr>
+        </thead>
+        <tbody>{missionsList()}</tbody>
+      </table>
+      <table className="profile__info">
+        <thead>
+          <tr>
+            <th>My Rockets</th>
+          </tr>
+        </thead>
+        <tbody>{rocketsList()}</tbody>
+      </table>
+    </section>
   );
 };
 

@@ -15,6 +15,7 @@ nav {
 
 .nav__logo {
   align-items: center;
+  color: rgb(0, 0, 0);
 }
 
 .nav__logo img {
