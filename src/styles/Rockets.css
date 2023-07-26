@@ -1,7 +1,7 @@
 .rockets {
   align-items: flex-start;
   justify-content: center;
-  padding: 2rem 4rem;
+  padding: 2rem 6rem;
   width: 100%;
   gap: 2rem;
 }
@@ -12,7 +12,6 @@
 }
 
 .rockets__list img {
-  width: 100%;
   max-width: 300px;
   height: auto;
 }
@@ -21,8 +20,44 @@
   gap: 1rem;
 }
 
-.rockets__container button {
-  width: 100%;
-  max-width: 15rem;
-  height: 3.5rem;
+.rockets__info h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.rockets__info p {
+  line-height: 2.4rem;
+}
+
+.rockets__badge {
+  color: rgb(255, 255, 255);
+  background-color: rgb(24, 162, 184);
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.4rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.rockets__reserve-btn,
+.rockets__cancel-btn {
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 100;
+  max-width: fit-content; /* stylelint-disable-line */
+}
+
+.rockets__reserve-btn {
+  background-color: rgb(0, 123, 255);
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+.rockets__cancel-btn {
+  background-color: transparent;
+  color: rgb(110, 118, 126);
+  border: 1px solid rgb(110, 118, 126);
 }
