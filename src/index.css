@@ -17,6 +17,7 @@ html {
   -webkit-text-size-adjust: 100%;
   font-size: 62.5%;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  overflow-y: scroll;
 }
 
 *,

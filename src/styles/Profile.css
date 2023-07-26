@@ -24,7 +24,7 @@
 
 .profile__info tbody {
   border: 1px solid rgb(204, 204, 204);
-  border-bottom: none; 
+  border-bottom: none;
   border-radius: 0.5rem;
   border-collapse: separate;
   gap: 1px;

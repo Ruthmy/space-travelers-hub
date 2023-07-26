@@ -6,10 +6,12 @@ import '../styles/Navbar.css';
 const Navbar = () => (
   <>
     <nav>
-      <div className="nav__logo d-flex-row">
-        <img src="logo192.png" alt="Space Travelers Logo" />
-        <h1>Space Travelers&apos; Hub</h1>
-      </div>
+      <NavLink to="/">
+        <div className="nav__logo d-flex-row">
+          <img src="logo192.png" alt="Space Travelers Logo" />
+          <h1>Space Travelers&apos; Hub</h1>
+        </div>
+      </NavLink>
       <div>
         <ul className="nav__routes d-flex-row">
           <li key="Rockets">

@@ -6,8 +6,6 @@ import Profile from './components/Profile';
 import Rockets from './components/Rockets';
 import Missions from './components/Missions';
 
-import './styles/App.css';
-
 const App = () => (
   <HashRouter>
     <Navbar />
