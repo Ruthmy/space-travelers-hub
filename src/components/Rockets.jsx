@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { fetchRockets } from '../redux/rockets/rocketsSlice';
+import { cancelReservation, reserveRocket } from '../redux/rockets/rocketsSlice';
 import '../styles/Rockets.css';
 
 const Rockets = () => {
@@ -9,8 +9,6 @@ const Rockets = () => {
 
   // Get books from Redux store:
   const rocketsList = useSelector((state) => state.rockets);
-  // For fetch the list, the side effects and re renders
-  useEffect(() => { dispatch(fetchRockets()); }, [dispatch]);
 
   return (
     <section className="rockets d-flex-column">
@@ -24,7 +22,18 @@ const Rockets = () => {
               <div className="rockets__info d-flex-column">
                 <h3>{rocket.name}</h3>
                 <p>{rocket.description}</p>
-                <button type="button">Reserve Rocket</button>
+                <button
+                  type="button"
+                  className={rocket.reserved ? 'cancel' : 'reserve'}
+                  onClick={() => {
+                    dispatch(rocket.reserved
+                      ? cancelReservation(rocket.id)
+                      : reserveRocket(rocket.id));
+                  }}
+                >
+                  {rocket.reserved && 'Cancel Reservation'}
+                  {!rocket.reserved && 'Reserve Rocket'}
+                </button>
               </div>
             </li>
           ))}

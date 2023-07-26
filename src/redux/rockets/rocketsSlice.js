@@ -23,7 +23,28 @@ const initialState = {
 const rocketsSlice = createSlice({
   name: 'rockets',
   initialState,
-  reducers: {},
+  reducers: {
+    // Reserve a rocket and set reserved to true
+    reserveRocket(state, action) {
+      const rocketId = action.payload;
+      const existingRocket = state.rockets.find(
+        (rocket) => rocket.id === rocketId,
+      );
+      if (existingRocket) {
+        existingRocket.reserved = true;
+      }
+    },
+    // Cancel reservation of a rocket and set reserved to false
+    cancelReservation(state, action) {
+      const rocketId = action.payload;
+      const existingRocket = state.rockets.find(
+        (rocket) => rocket.id === rocketId,
+      );
+      if (existingRocket) {
+        existingRocket.reserved = false;
+      }
+    },
+  },
   extraReducers(builder) {
     builder
       // Get rockets from API:
@@ -40,5 +61,7 @@ const rocketsSlice = createSlice({
       });
   },
 });
+
+export const { reserveRocket, cancelReservation } = rocketsSlice.actions;
 
 export default rocketsSlice.reducer;
