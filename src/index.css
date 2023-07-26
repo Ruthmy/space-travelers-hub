@@ -1,4 +1,5 @@
 /* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
   /* Set your variables here */
@@ -15,6 +16,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   font-size: 62.5%;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 *,
@@ -37,20 +39,30 @@ html {
   flex-direction: row;
 }
 
-h1 { font-size: var(--h1-size); }
+h1 {
+  font-size: var(--h1-size);
+}
 
-h2 { font-size: var(--h2-size); }
+h2 {
+  font-size: var(--h2-size);
+}
 
-h3 { font-size: var(--h3-size); }
+h3 {
+  font-size: var(--h3-size);
+}
 
 p,
 li,
 tr,
-td { font-size: var(--p-size); }
+td {
+  font-size: var(--p-size);
+}
 
 a {
   text-decoration: none;
   font-size: var(--p-size);
 }
 
-li { list-style: none; }
+li {
+  list-style: none;
+}

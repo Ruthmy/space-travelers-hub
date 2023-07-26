@@ -1,0 +1,83 @@
+.bg-grey {
+  background-color: rgb(242, 242, 242);
+}
+
+.bg-white {
+  background-color: rgb(255, 255, 255);
+}
+
+#missions {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 6rem;
+  width: 100%;
+}
+
+#missions__table {
+  background-color: rgb(222, 226, 230);
+  padding: 0;
+}
+
+#missions__table th,
+#missions__table td {
+  padding: 0.5em;
+}
+
+.table__row-header {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.mission-name {
+  font-size: 2rem;
+  font-weight: bold;
+  float: left;
+}
+
+.mission-description {
+  padding-bottom: 2.5rem !important;
+}
+
+.mission-status {
+  min-width: 10em;
+  text-align: center;
+}
+
+.mission-reserve {
+  min-width: 12em;
+  text-align: center;
+}
+
+.not-member-badge,
+.active-member-badge {
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.8rem;
+  font-weight: 500;
+}
+
+.not-member-badge {
+  background-color: rgb(109, 117, 125);
+  text-transform: uppercase;
+}
+
+.active-member-badge {
+  color: rgb(255, 255, 255);
+  background-color: rgb(24, 162, 184);
+}
+
+.mission__join-mission-btn,
+.mission__leave-mission-btn {
+  font-size: 2rem;
+  background-color: transparent;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  color: rgb(57, 62, 68);
+  border-color: rgb(57, 62, 68);
+  cursor: pointer;
+}
+
+.mission__leave-mission-btn {
+  border: 2px solid rgb(220, 54, 69);
+  color: rgb(220, 54, 69);
+}

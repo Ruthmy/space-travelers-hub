@@ -3,43 +3,51 @@ import { NavLink } from 'react-router-dom';
 
 import '../styles/Navbar.css';
 
-const routes = [
-  {
-    to: '/',
-    text: 'Rockets',
-  },
-  {
-    to: '/missions',
-    text: 'Missions',
-  },
-  {
-    to: '/profile',
-    text: 'My Profile',
-  },
-];
-
 const Navbar = () => (
-  <nav>
-    <div className="nav__logo">
-      <h1>Space Travelers` Hub</h1>
-    </div>
-    <div>
-      <ul>
-        {routes.map((route) => (
-          <li key={route.text}>
+  <>
+    <nav>
+      <div className="nav__logo d-flex-row">
+        <img src="logo192.png" alt="Space Travelers Logo" />
+        <h1>Space Travelers&apos; Hub</h1>
+      </div>
+      <div>
+        <ul className="nav__routes d-flex-row">
+          <li key="Rockets">
             <NavLink
+              to="/"
               style={({ isActive }) => ({
-                color: isActive ? '#121212' : '#888',
+                'text-decoration': isActive ? 'underline' : 'none',
               })}
-              to={route.to}
             >
-              {route.text}
+              Rockets
             </NavLink>
           </li>
-        ))}
-      </ul>
-    </div>
-  </nav>
+          <li key="Missions">
+            <NavLink
+              to="/missions"
+              style={({ isActive }) => ({
+                'text-decoration': isActive ? 'underline' : 'none',
+              })}
+            >
+              Missions
+            </NavLink>
+          </li>
+          <p>|</p>
+          <li key="My Profile">
+            <NavLink
+              to="/profile"
+              style={({ isActive }) => ({
+                'text-decoration': isActive ? 'underline' : 'none',
+              })}
+            >
+              My Profile
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div className="nav__line" />
+  </>
 );
 
 export default Navbar;
