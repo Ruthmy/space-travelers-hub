@@ -16,7 +16,7 @@ const Navbar = () => (
             <NavLink
               to="/"
               style={({ isActive }) => ({
-                'text-decoration': isActive ? 'underline' : 'none',
+                textDecoration: isActive ? 'underline' : 'none',
               })}
             >
               Rockets
@@ -26,7 +26,7 @@ const Navbar = () => (
             <NavLink
               to="/missions"
               style={({ isActive }) => ({
-                'text-decoration': isActive ? 'underline' : 'none',
+                textDecoration: isActive ? 'underline' : 'none',
               })}
             >
               Missions
@@ -37,7 +37,7 @@ const Navbar = () => (
             <NavLink
               to="/profile"
               style={({ isActive }) => ({
-                'text-decoration': isActive ? 'underline' : 'none',
+                textDecoration: isActive ? 'underline' : 'none',
               })}
             >
               My Profile
