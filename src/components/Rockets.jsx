@@ -7,7 +7,7 @@ import '../styles/Rockets.css';
 const Rockets = () => {
   const dispatch = useDispatch();
 
-  // Get books from Redux store:
+  // Get rockets from Redux store:
   const rocketsList = useSelector((state) => state.rockets);
 
   return (
