@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with no missions and rockets 1`] = `
+<div>
+  <section
+    class="profile"
+  >
+    <table
+      class="profile__info"
+    >
+      <thead>
+        <tr>
+          <th>
+            My Missions
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td
+            style="margin: auto;"
+          >
+            <i>
+              No missions joined yet
+            </i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table
+      class="profile__info"
+    >
+      <thead>
+        <tr>
+          <th>
+            My Rockets
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td
+            style="margin: auto;"
+          >
+            <i>
+              No rockets reserved yet
+            </i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</div>
+`;
