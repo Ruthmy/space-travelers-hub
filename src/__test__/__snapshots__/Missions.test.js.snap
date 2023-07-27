@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Empty Missions component correctly 1`] = `
+<div>
+  <section
+    id="missions"
+  >
+    <table
+      id="missions__table"
+    >
+      <thead>
+        <tr
+          class="table__row-header bg-white"
+        >
+          <th>
+            Mission
+          </th>
+          <th>
+            Description
+          </th>
+          <th>
+            Status
+          </th>
+          <th>
+             
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </section>
+</div>
+`;

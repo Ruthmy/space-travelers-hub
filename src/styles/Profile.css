@@ -1,0 +1,43 @@
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem 6rem;
+  width: 100%;
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.profile__info thead {
+  margin-bottom: 1em;
+}
+
+.profile__info thead th {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.profile__info tbody {
+  border: 1px solid rgb(204, 204, 204);
+  border-bottom: none;
+  border-radius: 0.5rem;
+  border-collapse: separate;
+  gap: 1px;
+}
+
+.profile__info tbody tr {
+  display: flex;
+  height: 6rem;
+  width: 99.5%;
+  margin: 0 auto;
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.profile__info tbody td {
+  margin: 1.5rem 2rem;
+}

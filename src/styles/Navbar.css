@@ -1,0 +1,42 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+  height: 8rem;
+  padding: 6rem 6rem;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  /* box-shadow: 0 4rem 2rem 4rem rgba(0, 0, 0, 0.03); */
+}
+
+.nav__logo {
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+
+.nav__logo img {
+  width: 13%;
+  margin-right: 2rem;
+}
+
+.nav__logo h1 {
+  font-weight: 500;
+}
+
+.nav__line {
+  border-bottom: 2px solid rgb(224, 224, 224);
+  height: 2px;
+  margin: 0 4rem;
+}
+
+.nav__routes {
+  gap: 3rem;
+}
+
+.nav__routes a {
+  color: rgb(1, 123, 255);
+}

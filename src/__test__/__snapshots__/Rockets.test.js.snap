@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Empty Missions component correctly 1`] = `
+<div>
+  <section
+    class="rockets d-flex-column"
+  >
+    <div
+      class="rockets__container d-flex-column"
+    >
+      <li
+        class="rockets__list d-flex-row"
+      >
+        <img
+          alt="Falcon 1"
+          src="https://imgur.com/DaCfMsj.jpg"
+        />
+        <div
+          class="rockets__info d-flex-column"
+        >
+          <h3>
+            Falcon 1
+          </h3>
+          <p>
+            The Falcon 1 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009. On 28 September 2008, Falcon 1 became the first privately-developed liquid-fuel launch vehicle to go into orbit around the Earth.
+          </p>
+          <button
+            class="rockets__reserve-btn"
+            type="button"
+          >
+            Reserve Rocket
+          </button>
+        </div>
+      </li>
+      <li
+        class="rockets__list d-flex-row"
+      >
+        <img
+          alt="Falcon 9"
+          src="https://farm1.staticflickr.com/929/28787338307_3453a11a77_b.jpg"
+        />
+        <div
+          class="rockets__info d-flex-column"
+        >
+          <h3>
+            Falcon 9
+          </h3>
+          <p>
+            Falcon 9 is a two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of satellites and the Dragon spacecraft into orbit.
+          </p>
+          <button
+            class="rockets__reserve-btn"
+            type="button"
+          >
+            Reserve Rocket
+          </button>
+        </div>
+      </li>
+    </div>
+  </section>
+</div>
+`;
