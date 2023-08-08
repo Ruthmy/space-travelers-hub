@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Ruthmy.github.io/space-travelers-hub",
   "name": "capstone-react",
   "version": "0.1.0",
   "private": true,
@@ -8,13 +9,14 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
     "axios": "^1.4.0",
+    "gh-pages": "^5.0.0",
+    "jest-mock": "^29.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.1",
     "react-router-dom": "^6.14.2",
     "react-scripts": "5.0.1",
     "redux-logger": "^3.0.6",
-    "jest-mock": "^29.6.1",
     "redux-mock-store": "^1.5.4",
     "web-vitals": "^2.1.4"
   },
@@ -22,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,9 +49,9 @@
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@babel/eslint-parser": "^7.22.9",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/plugin-syntax-jsx": "^7.22.5",
     "@babel/preset-react": "^7.22.5",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "axios-mock-adapter": "^1.21.5",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",

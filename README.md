@@ -1,10 +1,11 @@
 <a name="readme-top"></a>
 
 <div align="center">
+<img src="./src/assets/Logo Space Travelers.png" width="150px">
   <h1><b>Space Travelers' Hub  | React & Redux Capstone Project</b></h1>
 </div>
 
----
+
 
 <!-- TABLE OF CONTENTS -->
 
@@ -180,9 +181,8 @@ Install this project with:
 
 Upcoming improvements:
 
-- [] Create a full Single Page App (SPA) website.
-- [] Use SpaceX API to manage the Rockets and Missions.
 - [] Better styling.
+- [] Add more features.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
